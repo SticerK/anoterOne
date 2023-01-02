@@ -1,0 +1,13 @@
+html[data-theme='white'] {
+  --bg: white;
+  --mainColor: black;
+  --titleColor: rgb(202, 202, 202);
+  --border: 2px solid transparent;
+}
+
+html[data-theme='dark'] {
+  --bg: #1a1a1a;
+  --mainColor: rgba(235, 235, 235, 0.6);
+  --titleColor: rgba(255, 255, 255, 0.87);
+  --border: 2px solid black;
+}

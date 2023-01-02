@@ -1,0 +1,31 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(65, 65, 65, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.container {
+  max-width: 70%;
+  width: 1000px;
+  height: 70vh;
+  background: white;
+  cursor: auto;
+}

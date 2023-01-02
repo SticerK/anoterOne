@@ -1,0 +1,30 @@
+@import '../../styles/vars.scss';
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  height: 80px;
+  border-top: 2px solid rgb(0, 0, 0);
+  align-items: center;
+  padding: 0 15px;
+  background-color: var(--bg);
+  color: var(--mainColor);
+}
+
+.descr {
+  max-width: 40%;
+}
+
+.socialItem {
+  display: flex;
+  margin-top: 6px;
+  gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: translateY(-4px);
+  }
+}

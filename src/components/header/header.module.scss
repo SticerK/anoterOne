@@ -1,0 +1,80 @@
+@import '../../styles/vars.scss';
+
+.header {
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.ALine,
+.BLine {
+  position: absolute;
+  right: 0;
+  height: 13px;
+  background-color: var(--mainColor);
+}
+
+.ALine {
+  bottom: 50px;
+  min-width: 350px;
+}
+
+.BLine {
+  bottom: 80px;
+  width: 70px;
+}
+
+.avatar {
+  width: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  font-size: 20px;
+}
+
+.title {
+  font-size: 60px;
+  opacity: 0;
+  font-weight: 900;
+  color: var(--titleColor);
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  font-size: 50px;
+  font-weight: 900;
+  color: var(--titleColor);
+  letter-spacing: 2px;
+  line-height: 1;
+  opacity: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.theme {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  right: 10px;
+}
+
+.themeItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin: 10px 15px;
+  cursor: pointer;
+}
+.sun,
+.moon {
+  color: black;
+}

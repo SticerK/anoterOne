@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+@import './_animate.scss';
+@import './vars.scss';
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.headerAnimate-enter {
+  opacity: 0;
+}
+.headerAnimate-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.headerAnimate-exit {
+  opacity: 1;
+}
+.headerAnimate-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+body {
+  background: var(--bg);
+  color: var(--mainColor);
+}
+
+html {
+  scroll-behavior: smooth;
+}

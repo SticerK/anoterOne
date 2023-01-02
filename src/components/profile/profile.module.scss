@@ -1,0 +1,51 @@
+@import '../../styles/vars.scss';
+
+.content {
+  margin-left: 10%;
+  color: var(--mainColor);
+  width: 50%;
+  border-left: 2px solid black;
+  padding-left: 20px;
+  text-indent: 30px;
+  letter-spacing: 1px;
+
+  p {
+    line-height: 1.7;
+  }
+}
+
+.info {
+  width: 30%;
+  min-height: 100%;
+}
+
+.graf {
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.rectan {
+  width: 60px;
+  background-color: transparent;
+  align-self: flex-end;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height 0.3s ease;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.subInfo {
+  text-align: center;
+  border-top: 2px solid black;
+  margin-top: 15px;
+  padding-top: 5px;
+}
+
+.text {
+  transform: rotate(-90deg);
+}

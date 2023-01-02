@@ -1,0 +1,149 @@
+@import '../../styles/vars.scss';
+
+.btn {
+  width: 120px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  color: var(--mainColor);
+  text-decoration: none;
+
+  &:hover {
+    .top {
+      width: 100%;
+    }
+    .left {
+      height: 100%;
+    }
+    .bottom {
+      width: 100%;
+    }
+    .right {
+      height: 100%;
+    }
+  }
+}
+
+.top,
+.left,
+.bottom,
+.right {
+  transition: width 0.3s ease, height 0.3s ease;
+  position: absolute;
+  background-color: var(--mainColor);
+}
+
+.top,
+.bottom {
+  height: 2px;
+  width: 60px;
+}
+
+.top {
+  top: 0;
+  left: 0;
+}
+.bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.left,
+.right {
+  width: 2px;
+  height: 30px;
+}
+
+.left {
+  left: 0;
+  top: 0;
+}
+
+.right {
+  right: 0;
+  bottom: 0;
+}
+
+.section {
+  width: 100%;
+  background-color: var(--bg);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 600px;
+  margin: 30px 0;
+  transition: background 0.3s ease;
+}
+
+.title {
+  position: absolute;
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-right: 3px solid rgb(165, 165, 165);
+  height: 100%;
+  top: 0;
+  right: 0;
+  color: rgb(165, 165, 165);
+  font-size: 30px;
+  transition: border 0.3s ease;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.active {
+  border-right: 7px solid rgb(165, 165, 165);
+}
+
+.square {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 6px solid rgb(228, 228, 228);
+  outline: 6px solid black;
+  background-color: black;
+  top: 10%;
+  left: 10%;
+  color: white;
+  font-size: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.squareAnimate {
+  transform: rotate(90deg) translateY(-40px);
+}
+
+.clickSquare {
+  transform: translateY(150px) rotate(20deg);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.label {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: -15px;
+  font-size: 12px;
+  color: white;
+  right: 20px;
+  transform: rotate(-45deg);
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
