@@ -25,7 +25,6 @@ const Header: React.FC = () => {
       <Theme />
       <div className={styles.ALine} ref={LineARef}></div>
       <div className={styles.BLine} ref={LineBRef} id={'content'}></div>
-      <div className={styles.avatar}></div>
       <div className={styles.content}>
         <p className={styles.title} style={{ animation: animateField('animateField', 0.3) }}>
           Привет!

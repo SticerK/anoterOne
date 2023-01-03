@@ -24,14 +24,12 @@
   width: 70px;
 }
 
-.avatar {
-  width: 50%;
-}
-
 .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .text {
@@ -57,6 +55,7 @@
   opacity: 0;
   margin-bottom: 30px;
   line-height: 1.2;
+  margin-left: 10%;
 }
 
 .theme {

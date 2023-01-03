@@ -1,4 +1,5 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { CardTypes } from '../../types/type';
 
 interface ModalState {
   open: boolean;
@@ -14,8 +15,9 @@ const modalSlice = createSlice({
   name: 'modal',
   initialState,
   reducers: {
-    toggleModal(state) {
+    toggleModal(state, action: PayloadAction<CardTypes>) {
       state.open = !state.open;
+      if (state.open) state.card = action.payload;
     },
   },
 });

@@ -11,7 +11,7 @@ import { RootState } from '../store/store';
 
 const MainPage = () => {
   const theme = useSelector((state: RootState) => state.themeSlice.mode);
-
+  const { open } = useSelector((state: RootState) => state.modalSlice);
   return (
     <>
       <Header />

@@ -6,4 +6,6 @@ export interface CardTypes {
   intro: string;
   color: string;
   last: boolean;
+  books: string[];
+  link: string;
 }

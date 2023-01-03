@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({ index, card }) => {
     <div className={[styles.project, inView ? styles.cartAnimate : ''].join(' ')} ref={ref}>
       <div
         className={styles.intro}
-        onClick={() => dispath(toggleModal())}
+        onClick={() => dispath(toggleModal(card))}
         style={{ background: card.color }}>
         {card.intro}
       </div>
